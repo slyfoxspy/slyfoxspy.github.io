@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" name="viewport">
+
+	<title>Книжный калькулятор</title>
+
+	<link rel="stylesheet" type="text/css" href="public/less/style.css" />
+
+
+</body>
+
+</head>
+<body>
+	<main>
+		<h1>Книжный калькулятор</h1>
+
+		<form action="/calculate/" method="POST">
+
+			<div class="form-elements-wrapper">
+				<div class="left">
+					<div class="form-group">
+						<label for="book_r100">
+							<img src="public/img/icons/book_r100.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_r100" id="book_r100" />
+					</div>
+					<div class="form-group">
+						<label for="book_r500">
+							<img src="public/img/icons/book_r500.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_r500" id="book_r500" />
+					</div>
+					<div class="form-group">
+						<label for="book_r1000">
+							<img src="public/img/icons/book_r1000.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_r1000" id="book_r1000" />
+					</div>
+					<div class="form-group">
+						<label for="book_m100">
+							<img src="public/img/icons/book_m100.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_m100" id="book_m100" />
+					</div>
+					<div class="form-group">
+						<label for="book_m500">
+							<img src="public/img/icons/book_m500.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_m500" id="book_m500" />
+					</div>
+					<div class="form-group">
+						<label for="book_m1000">
+							<img src="public/img/icons/book_m1000.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_m1000" id="book_m1000" />
+					</div>
+					<div class="form-group">
+						<label for="book_p100">
+							<img src="public/img/icons/book_p100.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_p100" id="book_p100" />
+					</div>
+					<div class="form-group">
+						<label for="book_p500">
+							<img src="public/img/icons/book_p500.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_p500" id="book_p500" />
+					</div>
+					<div class="form-group">
+						<label for="book_p1000">
+							<img src="public/img/icons/book_p1000.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_p1000" id="book_p1000" />
+					</div>
+				</div>
+				<div class="right">
+					<div class="form-group">
+						<label for="book_h100">
+							<img src="public/img/icons/book_h100.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_h100" id="book_h100" />
+					</div>
+					<div class="form-group">
+						<label for="book_h500">
+							<img src="public/img/icons/book_h500.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_h500" id="book_h500" />
+					</div>
+					<div class="form-group">
+						<label for="book_h1000">
+							<img src="public/img/icons/book_h1000.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_h1000" id="book_h1000" />
+					</div>
+					<div class="form-group">
+						<label for="book_a100">
+							<img src="public/img/icons/book_a100.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_a100" id="book_a100" />
+					</div>
+					<div class="form-group">
+						<label for="book_a500">
+							<img src="public/img/icons/book_a500.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_a500" id="book_a500" />
+					</div>
+					<div class="form-group">
+						<label for="book_a1000">
+							<img src="public/img/icons/book_a1000.jpg">
+						</label>
+						<input type="number" name="" required="true" name="book_a1000" id="book_a1000" />
+					</div>
+					<button>Посчитать</button>
+					<br>
+					<h2>Результаты</h2>
+
+					<div id="result">0 очков</div>
+				</div>
+			</div>			
+
+			
+		</form>
+	</main>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="public/js/calc.js"></script>
+
+</html>
