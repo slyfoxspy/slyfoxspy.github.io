@@ -1,0 +1,124 @@
+
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*  */
+:root {
+	--тain-color: #467f92;
+	--тain-color-darken: #376079;
+	--тain-color-lighten: #55959e;
+	--background-color: #f2f2f2;
+	--accent-color: #c9e0e0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Bitter', serif;
+	font-size: 16px;
+	line-height: 1.3;
+	font-weight: 400;
+	color: #323232;
+	background-color: var(--тain-color-lighten);
+	margin: 0;
+	padding: 15px;
+}
+
+
+main {
+	width: 960px;
+	padding: 20px 40px 40px;
+	margin: 0 auto;
+	background-color: var(--background-color);
+	border-radius: 15px;
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+.form-elements-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.form-elements-wrapper .left,
+.form-elements-wrapper .right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 50%;
+}
+.form-group {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 20px;
+	width: 50%;
+}
+label {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	font-size: 18px;
+}
+label img {
+	max-width: 50px;
+	border: 1px solid #dedede;
+	border-radius: 5px;
+	overflow: hidden;
+}
+input {
+	font-family: 'Bitter', serif;
+	font-weight: 700;
+	padding: 7px 20px;
+	border: 1px solid #dedede;
+	outline: none;
+	box-shadow: none;
+	border-radius: 5px;
+}
+input:active,
+input:focus {
+	border-color: var(--тain-color);
+}
+button {
+	padding: 10px 65px;
+	font-size: 22px;
+	background-color: var(--тain-color);
+	color: #fff;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+button:hover {
+	background-color: var(--тain-color-darken);
+	cursor: pointer;
+}
+hr {
+	margin-top: 40px;
+}
+
+
+
+@media (max-width: 560px) {
+
+	main {
+		max-width: 95%;
+		padding: 10px 20px;
+	}
+	.form-elements-wrapper {
+		flex-direction: column;
+	}
+	.form-elements-wrapper .left,
+	.form-elements-wrapper .right {
+		width: 100%;
+	}
+	.form-group {
+		width: 100%;
+	}
+	input {
+		width: calc(100% - 70px);
+	}
+
+}
